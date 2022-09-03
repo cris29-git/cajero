@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajer automatico</title>
+</head>
+<body>
+    <form action="">
+        <h1>Acceso a tu cajero, de la mano contigo:</h1>
+        <label for="">usuario</label>
+        <input type="text" name="u" id="">
+        <label for="">password</label>
+        <input type="password" name="c" id="">
+        <input type="button" value="ingresar" onclick="login(this.form)">
+    </form>
+    <script>
+        function login(form){
+    if (form.u.value=="camilo") {
+        if (form.c.value=="1234") {
+            location="cajero.html";
+        } else {
+            alert("error de usuario");
+        }
+    }  else {
+        alert("error de password");
+    }
+}  
+    </script>
+</body>
+</html>
